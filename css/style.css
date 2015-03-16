@@ -1,0 +1,225 @@
+/*
+App: Style elements for Meetups App
+*/
+
+/* Video and Video Description Styling */
+
+.meetup-video{
+	padding-bottom: 40px;	
+}
+
+.meetup-video .meetup-iframe iframe {
+
+	width: 100%;
+
+}
+
+.meetup-video .author {
+	width: 100%;
+	text-align: right;
+	margin: -60px 0 60px 0;
+	color: #008ab4;
+}
+
+.meetup-video h2 span {
+    margin-left: 10%;
+    border-bottom: 1px solid #CDCDCD;
+    display: block;
+}
+
+.meetup-video h2 {
+	line-height: 50px;
+	color: #888;
+}
+
+@media screen and (min-width: 960px) {
+
+	.meetup-video {
+		float:left;
+		width:53%;
+		overflow:hidden;
+	}
+	
+	.meetup-video .meetup-iframe iframe {
+		min-height: 375px;
+		width: 100%;
+	
+	}
+
+}
+
+
+/* Twitter Styling */
+
+.meetup-twitter {
+	font-size: 12px;
+	overflow: hidden;
+}
+	
+.meetup-twitter .twitter-post{
+	margin-bottom: 20px;
+	background: url("../images/twitter.png");
+	background-size: 60px 50px;
+	background-repeat: no-repeat;
+    background-position: right center; 
+	
+}
+
+.meetup-twitter .twitter-hashtag{
+	color: #008ab4;
+	width: 100%;
+	text-align: right;
+	display:block;
+}
+
+.meetup-twitter .twitter-post a{
+	color: rgb(255, 255, 255);
+	background: none repeat scroll 0% 0% rgb(225, 13, 13);
+	display: block;
+	text-decoration: none;
+	width: 65%;
+	font-size: 16px;
+	padding: 20px 20px;
+}
+
+
+
+.twitter-feed {
+	background: #E1E2E7;
+	padding: 10px;
+	position: relative;
+}
+
+.twitter-feed .status {
+	background: #e10d0d;
+	color: #fff;
+	font-size:1.5em;
+	height: 40px; 
+	width: 100%;
+	opacity: 0.7;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: none;
+	padding: 10px 10px;
+	text-align: center;
+	letter-spacing: .8px;
+}
+
+
+.scroll-container {
+	position: relative;
+	overflow: hidden;
+    height: 800px;
+	margin: 0;
+}
+
+
+.twitter-feed ul.tweets {
+	list-style: none;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+}
+
+.twitter-feed ul.tweets li {
+	padding: 10px 20px 10px 10px;
+	background: #fcfcfc;
+	border-bottom: 1px solid #CDCDCD;
+	width: 93%;
+	overflow: hidden;
+
+}
+
+.twitter-feed ul.tweets li .vote{
+	/* width: 20px; */
+	height: 20px;
+	background: url('../images/up.png') no-repeat center center;
+	background-size: 20px 20px;
+	cursor: pointer;
+	display: block;
+	margin: 10px auto;
+}
+
+.twitter-feed ul.tweets li .voted{
+	background-image: url('../images/up-voted.png') !important;
+	cursor: default;
+}
+
+.twitter-feed ul.tweets li .description{
+	width: 80%;
+	overflow: hidden;
+	float: left;
+}
+
+.twitter-feed ul.tweets li .data{
+	width: 19%;
+	overflow: hidden;
+	float: right;
+	background: #efefef;
+	height: 100px;
+}
+
+.twitter-feed ul.tweets li .data .count{
+	text-align: center;
+	display: block;
+}
+
+.twitter-feed ul.tweets li .data .count span{
+	width: 100%;
+	display: block;
+	font-weight: bold;
+	color: rgb(191, 191, 191);
+}
+
+
+@media screen and (min-width: 960px) {
+
+	.meetup-twitter {
+		float:right;
+		width: 40%;
+	}
+
+
+}
+
+@media screen and (min-width: 783px) {
+	
+	.twitter-feed {
+		background: #E1E2E7;
+		padding: 20px;
+		position: relative;
+	}
+	
+	.meetup-twitter .twitter-post a{
+		width: 70%;
+		font-size: 24px;
+		padding: 10px 20px;
+	}
+
+	.meetup-twitter {
+		font-size: 16px;
+	}
+
+	.twitter-feed ul.tweets li .description{
+		width: 85%;
+	}
+	
+	.twitter-feed ul.tweets li .data{
+		width: 14%;
+	}
+	
+	.twitter-feed ul.tweets li {
+		width: 95%;	
+	}
+		
+}
+
+
+/* Plugin Styling */
+
+/*! perfect-scrollbar - v0.5.9
+* http://noraesae.github.com/perfect-scrollbar/
+* Copyright (c) 2015 Hyunje Alex Jun; Licensed MIT */
+
+.ps-container.ps-active-x>.ps-scrollbar-x-rail,.ps-container.ps-active-y>.ps-scrollbar-y-rail{display:block}.ps-container.ps-in-scrolling{pointer-events:none}.ps-container.ps-in-scrolling>.ps-scrollbar-x-rail{background-color:#eee;opacity:.9;-ms-filter:"alpha(Opacity=90)";filter:alpha(opacity=90)}.ps-container.ps-in-scrolling>.ps-scrollbar-x-rail>.ps-scrollbar-x{background-color:#999}.ps-container.ps-in-scrolling>.ps-scrollbar-y-rail{background-color:#eee;opacity:.9;-ms-filter:"alpha(Opacity=90)";filter:alpha(opacity=90)}.ps-container.ps-in-scrolling>.ps-scrollbar-y-rail>.ps-scrollbar-y{background-color:#999}.ps-container>.ps-scrollbar-x-rail{display:none;position:absolute;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;border-radius:4px;opacity:0;-ms-filter:"alpha(Opacity=0)";filter:alpha(opacity=0);-webkit-transition:background-color .2s linear,opacity .2s linear;-moz-transition:background-color .2s linear,opacity .2s linear;-o-transition:background-color .2s linear,opacity .2s linear;transition:background-color .2s linear,opacity .2s linear;bottom:3px;height:8px}.ps-container>.ps-scrollbar-x-rail>.ps-scrollbar-x{position:absolute;background-color:#aaa;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;border-radius:4px;-webkit-transition:background-color .2s linear;-moz-transition:background-color .2s linear;-o-transition:background-color .2s linear;transition:background-color .2s linear;bottom:0;height:8px}.ps-container>.ps-scrollbar-y-rail{display:none;position:absolute;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;border-radius:4px;opacity:0;-ms-filter:"alpha(Opacity=0)";filter:alpha(opacity=0);-webkit-transition:background-color .2s linear,opacity .2s linear;-moz-transition:background-color .2s linear,opacity .2s linear;-o-transition:background-color .2s linear,opacity .2s linear;transition:background-color .2s linear,opacity .2s linear;right:3px;width:8px}.ps-container>.ps-scrollbar-y-rail>.ps-scrollbar-y{position:absolute;background-color:#aaa;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;border-radius:4px;-webkit-transition:background-color .2s linear;-moz-transition:background-color .2s linear;-o-transition:background-color .2s linear;transition:background-color .2s linear;right:0;width:8px}.ps-container:hover.ps-in-scrolling{pointer-events:none}.ps-container:hover.ps-in-scrolling>.ps-scrollbar-x-rail{background-color:#eee;opacity:.9;-ms-filter:"alpha(Opacity=90)";filter:alpha(opacity=90)}.ps-container:hover.ps-in-scrolling>.ps-scrollbar-x-rail>.ps-scrollbar-x{background-color:#999}.ps-container:hover.ps-in-scrolling>.ps-scrollbar-y-rail{background-color:#eee;opacity:.9;-ms-filter:"alpha(Opacity=90)";filter:alpha(opacity=90)}.ps-container:hover.ps-in-scrolling>.ps-scrollbar-y-rail>.ps-scrollbar-y{background-color:#999}.ps-container:hover>.ps-scrollbar-x-rail,.ps-container:hover>.ps-scrollbar-y-rail{opacity:.6;-ms-filter:"alpha(Opacity=60)";filter:alpha(opacity=60)}.ps-container:hover>.ps-scrollbar-x-rail:hover{background-color:#eee;opacity:.9;-ms-filter:"alpha(Opacity=90)";filter:alpha(opacity=90)}.ps-container:hover>.ps-scrollbar-x-rail:hover>.ps-scrollbar-x{background-color:#999}.ps-container:hover>.ps-scrollbar-y-rail:hover{background-color:#eee;opacity:.9;-ms-filter:"alpha(Opacity=90)";filter:alpha(opacity=90)}.ps-container:hover>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y{background-color:#999}
