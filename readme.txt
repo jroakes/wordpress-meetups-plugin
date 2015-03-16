@@ -15,6 +15,7 @@ WordPress plugin for showing video hangouts and Twitter Q&A for live events.
 
 This plugin is free to use and tweak.  If you wish to modify the behavior of the MixItUp (jQuery) integration for use in a commercial project, you must purchase a license (https://mixitup.kunkalabs.com/licenses/).
 
+Since this is a free plugin, please use at your own risk. There is no support offered.
 
 = Tags =
 meetups, twitter, live event, Q & A, question and answer
